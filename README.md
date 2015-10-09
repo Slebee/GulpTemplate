@@ -25,4 +25,5 @@ else if(transformedDeclaration.property === 'background' && /\?__spriter/i.test(
       return cb(transformedDeclaration,declarationIndex,eclarations);
     }
 }
+```
 如此一来只有在样式文件中出现?_spriter的图片才会被合并
