@@ -53,9 +53,9 @@ gulp.task('less',function(){
             plugins: [autoprefix, cleancss]
         }))
         .pipe(spriter({
-            // Éú³ÉµÄspriterµÄÎ»ÖÃ
+            // ï¿½ï¿½Éµï¿½spriterï¿½ï¿½Î»ï¿½ï¿½
             spriteSheet: path.dist+'/img/sprite'+timestamp+'.png',
-            // will be £ºbackgound:url(../images/sprite20324232.png)
+            // will be ï¿½ï¿½backgound:url(../images/sprite20324232.png)
             pathToSpriteSheetFromCSS: '../img/sprite'+timestamp+'.png'
         }))
         .pipe(minifyCSS())
@@ -91,7 +91,7 @@ gulp.task('watch', function() {
     gulp.watch(path.src+'/less/**/*.less', ['less']);
 
     // watch js
-    gulp.watch(path.src+'/scripts/**/*.js', ['scripts']);
+    gulp.watch(path.src+'/js/**/*.js', ['scripts']);
 
     // watch img
     gulp.watch(path.src+'/img/**/*', ['images']);

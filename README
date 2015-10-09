@@ -1,15 +1,16 @@
+<h1></h1>
 //about gulp-css-spriter
 //change node_modules\gulp-css-spriter\lib\map-over-styles-and-transform-background-image-declarations.js file
 //line 48
                 if(transformedDeclaration.property === 'background-image' && /\?__spriter/i.test(transformedDeclaration.value)) {
-                    transformedDeclaration.value = transformedDeclaration.value.replace('?__spriter'£¬'');
-                    return cb(transformedDeclaration£¬ declarationIndex£¬ declarations);
+                    transformedDeclaration.value = transformedDeclaration.value.replace('?__spriter'ï¿½ï¿½'');
+                    return cb(transformedDeclarationï¿½ï¿½ declarationIndexï¿½ï¿½ declarations);
                 }
-                // Background is a shorthand property so make sure `url()` is in there ÇÒÅÐ¶ÏurlÊÇ·ñÓÐ?__spriterºó×º
+                // Background is a shorthand property so make sure `url()` is in there ï¿½ï¿½ï¿½Ð¶ï¿½urlï¿½Ç·ï¿½ï¿½ï¿½?__spriterï¿½ï¿½×º
                 else if(transformedDeclaration.property === 'background' && /\?__spriter/i.test(transformedDeclaration.value)) {
-                    transformedDeclaration.value = transformedDeclaration.value.replace('?__spriter'£¬'');
+                    transformedDeclaration.value = transformedDeclaration.value.replace('?__spriter'ï¿½ï¿½'');
                     var hasImageValue = spriterUtil.backgroundURLRegex.test(transformedDeclaration.value);
                     if(hasImageValue) {
-                        return cb(transformedDeclaration£¬ declarationIndex£¬ declarations);
+                        return cb(transformedDeclarationï¿½ï¿½ declarationIndexï¿½ï¿½ declarations);
                     }
                 }
