@@ -53,9 +53,8 @@ gulp.task('less',function(){
             plugins: [autoprefix, cleancss]
         }))
         .pipe(spriter({
-            // ��ɵ�spriter��λ��
             spriteSheet: path.dist+'/img/sprite'+timestamp+'.png',
-            // will be ��backgound:url(../images/sprite20324232.png)
+            // will backgound:url(../img/sprite20324232.png)
             pathToSpriteSheetFromCSS: '../img/sprite'+timestamp+'.png'
         }))
         .pipe(minifyCSS())
