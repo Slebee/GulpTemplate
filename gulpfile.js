@@ -74,7 +74,7 @@ gulp.task('clean', function() {
 //server
 gulp.task('connectDev',function() {
     connect.server({
-        root: path.dist,
+        root: './',
         livereload: true
     });
 });
